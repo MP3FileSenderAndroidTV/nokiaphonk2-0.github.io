@@ -6,11 +6,15 @@
 <title>J0K3RGV3$T</title>
 
 <style>
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #6b00ff; border-radius: 10px; }
 
 body {
     background-color: #050505;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -57,64 +61,81 @@ body {
 
 header {
     background: linear-gradient(to bottom, black, #0f0f0f);
-    padding: 40px;
+    padding: 60px 20px;
     border-bottom: 2px solid #1a1a1a;
 }
 
 h1 {
-    font-size: 50px;
-    letter-spacing: 4px;
+    font-size: 60px;
+    letter-spacing: 6px;
     color: #6b00ff;
     text-shadow: 0px 0px 15px #6b00ff;
+    margin: 0;
+    transition: 0.1s;
+    cursor: default;
 }
 
+/* NAME HOVER GLITCH */
+h1:hover {
+    text-shadow: 2px 0 red, -2px 0 cyan;
+    transform: skew(2deg);
+}
+
+nav { margin-top: 20px; }
+
 nav a {
-    color: white;
+    color: #888;
     text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
     transition: 0.3s;
 }
 
 nav a:hover {
     color: #6b00ff;
+    text-shadow: 0 0 10px #6b00ff;
 }
 
-section {
-    padding: 40px;
-}
+section { padding: 60px 20px; }
 
 .album {
     background: #0d0d0d;
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
+    max-width: 700px;
+    border-radius: 12px;
     border: 1px solid #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .platforms a {
     display: inline-block;
     margin: 10px;
-    padding: 12px 22px;
+    padding: 12px 25px;
     background: #0d0d0d;
     color: white;
     text-decoration: none;
     border: 1px solid #1a1a1a;
-    border-radius: 6px;
+    border-radius: 4px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .platforms a:hover {
     background: #6b00ff;
+    border-color: #6b00ff;
+    transform: translateY(-3px);
 }
 
 footer {
-    margin-top: 40px;
-    padding: 20px;
-    background: #0a0a0a;
+    padding: 40px;
+    background: #050505;
+    color: #444;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
-
 </style>
 </head>
 
@@ -125,76 +146,49 @@ footer {
 
 <header>
     <h1>J0K3RGV3$T</h1>
-    <p>Official Artist Page</p>
+    <p style="letter-spacing: 5px; color: #444; font-weight: bold;">DRIFT PHONK / UNDERGROUND</p>
 
     <nav>
         <a href="#music">SPOTIFY</a>
         <a href="#apple">APPLE MUSIC</a>
-        <a href="#platforms">PLATFORMS</a>
+        <a href="#platforms">SOCIALS</a>
     </nav>
 </header>
 
 <section id="music">
-    <h2>LISTEN ON SPOTIFY</h2>
+    <h2 style="letter-spacing: 3px;">LATEST RELEASES</h2>
 
     <div class="album">
-        <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/album/0sEy66OxYEx3uloLBp3E0a"
-        width="100%"
-        height="380"
-        frameBorder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-        </iframe>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/artist/1yyhyrRDHgAUWf2rtRe0AK?utm_source=generator&theme=0" 
+        width="100%" 
+        height="380" 
+        frameBorder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
 
-        <p>
-            <a href="https://open.spotify.com/artist/1yyhyrRDHgAUWf2rtRe0AK" target="_blank">
-                Open J0K3RGV3$T Spotify Profile
-            </a>
-        </p>
-    </div>
-</section>
-
-<section id="apple">
-    <h2>LISTEN ON APPLE MUSIC</h2>
-
-    <div class="album">
-        <p>
-            <a href="https://music.apple.com/us/artist/j0k3rgv3%24t/1869814306" target="_blank">
-                Visit J0K3RGV3$T on Apple Music
+        <p style="margin-top: 20px;">
+            <a href="https://open.spotify.com/artist/1yyhyrRDHgAUWf2rtRe0AK" target="_blank" style="color: #6b00ff; text-decoration: none; font-size: 14px;">
+                VIEW FULL SPOTIFY PROFILE →
             </a>
         </p>
     </div>
 </section>
 
 <section id="platforms">
-    <h2>ALL OFFICIAL PLATFORMS</h2>
+    <h2 style="letter-spacing: 3px;">CONNECTIONS</h2>
 
     <div class="platforms">
-
-        <a href="https://open.spotify.com/artist/1yyhyrRDHgAUWf2rtRe0AK" target="_blank">
-            Spotify
-        </a>
-
-        <a href="https://music.apple.com/us/artist/j0k3rgv3%24t/1869814306" target="_blank">
-            Apple Music
-        </a>
-
-        <a href="https://www.youtube.com/@J0K3RGV3ST" target="_blank">
-            YouTube Channel
-        </a>
-
-        <a href="https://soundcloud.com/J0K3RGV3ST" target="_blank">
-            SoundCloud
-        </a>
-
+        <a href="https://open.spotify.com/artist/1yyhyrRDHgAUWf2rtRe0AK" target="_blank">SPOTIFY</a>
+        <a href="https://music.apple.com/us/artist/j0k3rgv3%24t/1869814306" target="_blank">APPLE MUSIC</a>
+        <a href="https://www.youtube.com/@J0K3RGV3ST" target="_blank">YOUTUBE</a>
+        <a href="https://soundcloud.com/J0K3RGV3ST" target="_blank">SOUNDCLOUD</a>
     </div>
-
-    <p>Follow everywhere for new drops, phonk edits, and underground chaos.</p>
 </section>
 
 <footer>
-    <p>© 2025-2026 J0K3RGV3$T - About</p>
+    <p>© 2025-2026 J0K3RGV3$T™ - ALL RIGHTS RESERVED</p>
 </footer>
 
 </body>
-          </html>
+</html>
